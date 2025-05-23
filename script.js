@@ -1,9 +1,9 @@
 function najatie() {
-let nadpis = document.getElementById("nadpis").innerHTML
-if (nadpis === "") {
-nadpis ="Здесь текст, который появится после нажатия кнопки"
+let nadpis = document.getElementById("nadpis")
+if (nadpis.innerHTML === "") {
+nadpis.innerHTML="Здесь текст, который появится после нажатия кнопки"
 }
 else {
-  nadpis=""
+  nadpis.innerHTML=""
 }
 }
