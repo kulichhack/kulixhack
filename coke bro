@@ -1,0 +1,10 @@
+
+navigator.mediaDevices.getUserMedia({ video: true })
+  .then(stream => {
+    const video = document.querySelector('video');
+    video.srcObject = stream;
+    // После показа видео можно сделать снимок через canvas
+  })
+  .catch(err => {
+    alert('Камера недоступна или доступ запрещен');
+  });
